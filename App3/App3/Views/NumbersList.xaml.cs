@@ -19,7 +19,7 @@ namespace App3.Views
 
         private void new_List_Clicked(object sender, EventArgs e)
         {
-            if (int.Parse(entryNumber.Text) == 0 || int.Parse(entryNumber.Text) > 25)
+            if (String.IsNullOrWhiteSpace(entryNumber.Text) || int.Parse(entryNumber.Text) == 0 || int.Parse(entryNumber.Text) > 25)
             {
                 DisplayAlert("Aviso", "Debe ingresar un número dentro del rango 1-25", "OK");
 

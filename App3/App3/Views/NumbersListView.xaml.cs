@@ -34,7 +34,7 @@ namespace App3.Views
                 }
 
                 numbersListView.ItemsSource = list_number;
-                DisplayAlert("Aviso", "Listado generado exitosamente!", "OK");
+                DisplayAlert("Aviso", "El listado se genero exitosamente!", "OK");
             }
         }
 

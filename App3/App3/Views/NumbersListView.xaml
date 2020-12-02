@@ -11,18 +11,16 @@
                     FontAttributes="Bold,Italic"
                     FontSize="Large"
                     HorizontalOptions="Center"
-                    Text="Númeritos"
+                    Text="Numeritos"
                     TextColor="DarkBlue"
-                    TextTransform="Uppercase"
-                    />
+                    TextTransform="Uppercase" />
                 <Entry
                     x:Name="entryNumber"
                     HorizontalOptions="Center"
                     HorizontalTextAlignment="Center"
                     Placeholder="Ingrese un número (Rango: 1 - 25)"
                     PlaceholderColor="Chocolate"
-                    Text="5"
-                    />
+                    Text="5" />
                 <Button Clicked="new_ListView_Clicked" Text="Crear Listado" />
             </StackLayout>
             <ScrollView>
