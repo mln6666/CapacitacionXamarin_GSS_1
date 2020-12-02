@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="App3.Views.Tiempo"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout Margin="20,20,20,0">
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Cálculo de Tiempo" />
+            <Label FontSize="Medium" Text="Ingrese Velocidad" />
+            <Entry
+                x:Name="entryVelocidad"
+                Placeholder="velocidad"
+                PlaceholderColor="Chocolate" />
+            <Label FontSize="Medium" Text="Ingrese Distancia" />
+            <Entry
+                x:Name="entryDistancia"
+                Placeholder="distancia kms"
+                PlaceholderColor="Chocolate" />
+            <Button Clicked="Button_Clicked" Text="Calcular" />
+            <StackLayout BackgroundColor="Azure">
+                <Label
+                    FontSize="Large"
+                    HorizontalTextAlignment="Center"
+                    Text="Resultado"
+                    TextDecorations="Underline"
+                    TextTransform="Uppercase" />
+                <Label
+                    x:Name="lblResultado"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Blue"
+                    TextDecorations="Underline" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="App3.Views.Login"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout
+            x:Name="EntriesStackLayout"
+            Margin="20,0,20,0"
+            BackgroundColor="Azure">
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Iniciar Sesión" />
+            <Label FontSize="Medium" Text="Usuario" />
+            <Entry
+                x:Name="entryUsuario"
+                Placeholder="Ingrese su nombre de usuario"
+                PlaceholderColor="Chocolate"
+                Text="mponce" />
+            <Label FontSize="Medium" Text="Contraseña" />
+            <Entry
+                x:Name="entryPassword"
+                IsPassword="true"
+                Placeholder="Ingrese su contraseña"
+                PlaceholderColor="Chocolate"
+                Text="goya12345" />
+            <Button Clicked="Login_Clicked" Text="Iniciar Sesión" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
